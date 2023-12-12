@@ -3,6 +3,7 @@ import speech_recognition as sr
 #nltk.download()
 #nltk.download faz o download das palavras do nltk
 
+#
 r = sr.Recognizer()
 with sr.Microphone() as source:
     print("Diga algo")
@@ -145,7 +146,6 @@ do que de alegria
 """
 #Testando com uma frase nova
 
-teste = 'Que descoberta surpreendente e maravilhosa! Este produto facilitou minha vida de maneira notável.'
 testestem = []
 stemmer = nltk.stem.RSLPStemmer()
 for (palavrastreinamento) in teste.split():
@@ -160,4 +160,3 @@ for classe in distribuicao.samples():
     print("%s: %f" % (classe, distribuicao.prob(classe)))
 
 # Melhorar a base e produzir testes condizentes
-
